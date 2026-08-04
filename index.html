@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MemePop - 숏폼을 저장하고 나만의 밈으로 팝!</title>
+  <meta name="description" content="유튜브 쇼츠, 인스타그램 릴스 속 명장면을 찾아 10초 만에 밈(Meme)으로 만들고 친구들과 공유해보세요.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-container">
+    <!-- GNB -->
+    <header class="gnb">
+      <div class="gnb-left">
+        <a href="#home" class="logo" aria-label="MemePop 홈으로 이동">
+          Meme<span>Pop</span>
+        </a>
+        <div class="search-bar">
+          <input type="search" id="global-search-input" placeholder="키워드, 태그, 제작자 검색..." aria-label="검색창">
+          <button id="global-search-btn" aria-label="검색 버튼">🔍</button>
+        </div>
+      </div>
+      <div class="gnb-right">
+        <a href="#notifications" class="btn-pop btn-accent" id="nav-notif-btn" aria-label="알림 확인">
+          🔔 <span id="notif-badge" style="background-color: var(--color-primary); color: #fff; padding: 2px 6px; border-radius: 50%; font-size: 0.75rem; border: 1px solid #000;">2</span>
+        </a>
+        <a href="#profile" class="btn-pop btn-primary" aria-label="내 프로필 이동">
+          MY POP
+        </a>
+      </div>
+    </header>
+
+    <!-- Marquee Banner -->
+    <div class="marquee-container" aria-hidden="true">
+      <div class="marquee-track">
+        <div class="marquee-content">
+          <span>🔥 TODAY'S POPULAR SHORT: DANCE CHALLENGE</span>
+          <span>⚡ POP OUT YOUR MEME IN 10 SECONDS</span>
+          <span>✨ CHOOSE CUTE STICKERS</span>
+          <span>💥 SHARE TO INSTAGRAM STORY</span>
+          <span>🎉 WELCOME TO MEMEPOP PLAYGROUND</span>
+          <!-- Double contents for infinite loop -->
+          <span>🔥 TODAY'S POPULAR SHORT: DANCE CHALLENGE</span>
+          <span>⚡ POP OUT YOUR MEME IN 10 SECONDS</span>
+          <span>✨ CHOOSE CUTE STICKERS</span>
+          <span>💥 SHARE TO INSTAGRAM STORY</span>
+          <span>🎉 WELCOME TO MEMEPOP PLAYGROUND</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- App Body (LNB + Main) -->
+    <div class="app-body">
+      <!-- Sidebar Navigation -->
+      <aside class="lnb">
+        <nav aria-label="사이드 메뉴">
+          <a href="#home" class="nav-link" id="nav-home">
+            🏠 <span>Home</span>
+          </a>
+          <a href="#explore" class="nav-link" id="nav-explore">
+            🧭 <span>Explore</span>
+          </a>
+          <a href="#trending" class="nav-link" id="nav-trending">
+            📈 <span>Trending</span>
+          </a>
+          <a href="#editor" class="nav-link" id="nav-editor">
+            🎨 <span>Meme Editor</span>
+          </a>
+          <a href="#community" class="nav-link" id="nav-community">
+            💬 <span>Community</span>
+          </a>
+          <a href="#settings" class="nav-link" id="nav-settings">
+            ⚙️ <span>Settings</span>
+          </a>
+        </nav>
+      </aside>
+
+      <!-- Main Content viewport -->
+      <main class="main-content" id="app-view">
+        <!-- JS가 각 뷰를 여기에 동적으로 렌더링합니다 -->
+      </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-links">
+        <a href="#about">About MemePop</a>
+        <a href="#terms">이용약관</a>
+        <a href="#privacy">개인정보처리방침</a>
+        <a href="#support">고객지원</a>
+      </div>
+      <p>&copy; 2026 MemePop Corp. All rights reserved. 🚀 Designed with Pop Art & Neo-Brutalism.</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
